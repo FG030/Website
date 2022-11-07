@@ -1,0 +1,128 @@
+
+p {
+  color: rgb(255,255,255);
+  font-family: monospace;
+}
+h1, h2 , h5, h3{
+  color: rgb(255,255,255);
+  font-family: monospace;
+}
+a {
+  font-family: monospace;
+  color: rgb(255,255,255);
+}
+small {
+  color: #0f4861;
+  text-align: center;
+}
+ 
+.link1{
+
+  font-size: 125%;
+}
+
+
+li{
+  color: rgb(255,255,255);
+}
+/* pictures */
+.pic1{
+  max-height:225%;
+  position:relative;right:-800px;top:172.5px;
+ 
+}
+
+.pic2{
+  max-width: 27.5%;
+  max-height: 27.5%;
+  position:relative;right:-900px;top:-275px;
+  animation: rotation2 7s infinite;
+
+}
+
+.leopic{
+
+ max-width: 12.5%;
+ position:relative;right:-200px;top:152.5px;
+  animation: rotation2 7s infinite;
+}
+
+.fish1{
+ max-width:10%;
+ animation: rotation 6s infinite linear ;
+ animation-fill-mode: forwards;
+  
+}
+/* pictures */
+
+
+body{
+  background-color: #000000;
+  background-image: url("backgroundwebsite.png");
+  background-size: 110%;
+}
+/* menu */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #058199;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #969292;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* menu */
+
+@keyframes rotation {
+ 
+  from {
+    transform: rotate(0deg);
+    position:relative;right:-2000px;top:-200px;
+  }
+  to {
+    transform: rotate(359deg);
+    position:relative;right:2000px;top:-200px;
+  }
+}
+
+@keyframes rotation2 {
+ 
+  from {
+    transform: rotate(0deg);
+    
+  }
+  to {
+    transform: rotate(359deg);
+    
+  }
+}
